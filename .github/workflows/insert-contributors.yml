@@ -1,9 +1,13 @@
 # Inserts list of community members into ./README.md
+# DISABLED AUTO-RUN: Originally triggered on auto-triggers
+# Converted to manual execution only - 2025-10-18
+# Backup available at: insert-contributors.yml.backup
 name: 💓 Inserts Contributors & Sponsors
 on:
-  workflow_dispatch: # Manual dispatch
-  schedule:
-    - cron: '45 1 * * 0' # At 01:45 on Sunday.
+  workflow_dispatch:  # Manual trigger only
+#   workflow_dispatch: # Manual dispatch
+#   schedule:
+#     - cron: '45 1 * * 0' # At 01:45 on Sunday.
 
 jobs:
   # Job #1 - Fetches sponsors and inserts table into readme

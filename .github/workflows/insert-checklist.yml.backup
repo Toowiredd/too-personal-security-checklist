@@ -1,14 +1,11 @@
-# DISABLED AUTO-RUN: Originally triggered on auto-triggers
-# Converted to manual execution only - 2025-10-18
-# Backup available at: insert-checklist.yml.backup
 name: ☑️ Generate and insert markdown from YAML
 
 on:
-  workflow_dispatch:  # Manual trigger only
-#   workflow_dispatch:
-#   push:
-#     branches: [ master ]
-#     paths: ['personal-security-checklist.yml']
+  workflow_dispatch:
+  push:
+    branches: [ master ]
+    paths: ['personal-security-checklist.yml']
+    
 jobs:
   build:
     runs-on: ubuntu-latest
